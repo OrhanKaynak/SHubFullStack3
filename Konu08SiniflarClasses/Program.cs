@@ -4,7 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 namespace Konu08SiniflarClasses
 {
 
-    internal class Ev 
+    internal class Ev
     {
         internal string sokakAdi;
         internal int kapiNo;
@@ -59,10 +59,15 @@ namespace Konu08SiniflarClasses
             Console.WriteLine("Köy Evi Sokak Adı: " + koyEvi.sokakAdi);
             Console.WriteLine("Köy Evi Kapı No: " + koyEvi.kapiNo);
             #endregion
+
             #region Ornek2
             Kullanici kullanici = new()
             {
-                name = "Ahmet", surname = "Yılmaz", userName = "ayilmaz", Password = "12345", Id = 1,
+                name = "Ahmet",
+                surname = "Yılmaz",
+                userName = "ayilmaz",
+                Password = "12345",
+                Id = 1,
 
             };
             Console.WriteLine("Kullanıcı Adınız: ");
@@ -79,11 +84,53 @@ namespace Konu08SiniflarClasses
                 Console.WriteLine("Kullanıcı adı veya şifre hatalı!");
             }
             #endregion
+
+            #region Örnek 3
+            Araba araba = new()
+            {
+                Id = 1,
+                Marka = "Togg",
+                KasaTipi = "Suv",
+                Model = "T10x",
+                Renk = "Kırmızı",
+                ModelYili = 2025
+            };
+
+            Araba araba2 = new()
+            {
+                Id = 2,
+                Marka = "Togg",
+                KasaTipi = "Sedan",
+                Model = "T10F",
+                Renk = "Beyaz",
+                ModelYili = 2023
+            };
+            #endregion
+
+            #region Örnek 4
+            Kategori kategori = new()
+            { 
+                Id = 3,
+                KategoriAdi = "Elektronik"
+            };
+            Kategori kategori2 = new()
+            { 
+                Id = 4,
+                KategoriAdi = "Bilgisayar"
+            };
+            Kategori kategori3 = new()
+            { 
+                Id = 5,
+                KategoriAdi = "Telefon"
+            };
+            Console.WriteLine();
+            Console.WriteLine($"Anasayfa Hakkımızda {kategori.KategoriAdi} {kategori2.KategoriAdi} {kategori3.KategoriAdi} İletişim");
+            #endregion
         }
     }
 
     class Kullanici
-    { 
+    {
         internal int Id;
         internal string userName;
         internal string Password;
@@ -93,7 +140,7 @@ namespace Konu08SiniflarClasses
     }
 
     class Araba
-    { 
+    {
         internal int Id;
         internal string Marka;
         internal string Model;
