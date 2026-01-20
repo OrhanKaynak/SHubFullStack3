@@ -126,6 +126,42 @@ namespace Konu08SiniflarClasses
             Console.WriteLine();
             Console.WriteLine($"Anasayfa Hakkımızda {kategori.KategoriAdi} {kategori2.KategoriAdi} {kategori3.KategoriAdi} İletişim");
             #endregion
+
+            #region Örnek 5
+            SiniftaMetotKullanimi metotKullanimi = new(); //SiniftaMetotKullanimi classından metotKullanimi adında bir nesne oluşturduk.
+            var sonuc = metotKullanimi.LoginKontrol(kullaniciAdi, sifre); //metotKullanimi nesnesinin içindeki LoginKontrol metoduna istediği parametleri vererek oradan dönecek bool değeri sonuç değişkenine atadık.
+            if (sonuc == true) //Eğer sonuç değişkenine gelen değer true ise
+            {
+                Console.WriteLine("Giriş Başarılı!");
+                Console.WriteLine("Hoşgeldin Admin");
+            }
+            else //sonuç değişkennin değeri false ise
+                Console.WriteLine("Giriş Başarısız!");
+
+            Console.WriteLine();
+            var toplamasonucu = metotKullanimi.ToplamaYap(10, 8);
+            Console.WriteLine("toplamasonucu: " + toplamasonucu);
+            Console.WriteLine();
+
+            Console.WriteLine("Statik değişken: " + SiniftaMetotKullanimi.StatikDegisken); //StatikDegisken in değerine ulaşmak için direkt sınıfadı.StatikDegisken adı şeklinde ulaşıyoruz
+            Console.WriteLine("Dinamik değişken: " + metotKullanimi.DinamikDegisken);
+            #endregion
+
+            #region Örnek 6
+            User user = new()
+            {
+                Id = 1,
+                CreateDate = DateTime.Now,
+                Name = "Test",
+                Email = "Testdeneme.co",
+                Password = sifre,
+                Phone = "Test",
+                Username = kullaniciAdi 
+            };
+            Console.WriteLine();
+            bool kullaniciGirisSonuc = user.KullaniciGiris(user.Username, user.Password);
+            Console.WriteLine("kullanici Giris Sonuc: " + kullaniciGirisSonuc);
+            #endregion
         }
     }
 
