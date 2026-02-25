@@ -17,5 +17,6 @@
   <Project Path="Konu16CollectionsKoleksiyonlar/Konu16CollectionsKoleksiyonlar.csproj" Id="ec83ea6c-2cfb-4fac-a441-dc36a804e786" />
   <Project Path="Konu17HataYonetimi/Konu17HataYonetimi.csproj" Id="bceef4bd-bdd0-48a3-b778-fd16d28ee46a" />
   <Project Path="Konu18SOLIDPrensipleri/Konu18SOLIDPrensipleri.csproj" Id="3d940c5b-eae5-41ee-9f31-cca0912195e0" />
+  <Project Path="WindowsFormsAppAdoNetCRUD/WindowsFormsAppAdoNetCRUD.csproj" Id="3922897d-723b-4ec6-8e02-07b285178a67" />
   <Project Path="WindowsFormsEgitimi/WindowsFormsEgitimi.csproj" Id="1e84235b-e391-4b30-8e1a-b5308d6ebf8d" />
 </Solution>
