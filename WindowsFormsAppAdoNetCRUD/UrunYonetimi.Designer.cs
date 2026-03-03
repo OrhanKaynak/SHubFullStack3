@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsAppAdoNetCRUD
 {
-    partial class KategoriYonetimi
+    partial class UrunYonetimi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvKategoriler = new System.Windows.Forms.DataGridView();
+            this.dgvUrunler = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
@@ -36,24 +36,27 @@
             this.txtAciklama = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbDurum = new System.Windows.Forms.CheckBox();
-            this.txtKategoriAdi = new System.Windows.Forms.TextBox();
+            this.txtUrunFiyati = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKategoriler)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtUrunAdi = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtStok = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvKategoriler
+            // dgvUrunler
             // 
-            this.dgvKategoriler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvKategoriler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKategoriler.Location = new System.Drawing.Point(12, 12);
-            this.dgvKategoriler.Name = "dgvKategoriler";
-            this.dgvKategoriler.RowHeadersWidth = 51;
-            this.dgvKategoriler.RowTemplate.Height = 24;
-            this.dgvKategoriler.Size = new System.Drawing.Size(861, 283);
-            this.dgvKategoriler.TabIndex = 0;
-            this.dgvKategoriler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKategoriler_CellClick);
+            this.dgvUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUrunler.Location = new System.Drawing.Point(-1, 3);
+            this.dgvUrunler.Name = "dgvUrunler";
+            this.dgvUrunler.RowHeadersWidth = 51;
+            this.dgvUrunler.RowTemplate.Height = 24;
+            this.dgvUrunler.Size = new System.Drawing.Size(870, 283);
+            this.dgvUrunler.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -63,15 +66,19 @@
             this.groupBox1.Controls.Add(this.txtAciklama);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cbDurum);
-            this.groupBox1.Controls.Add(this.txtKategoriAdi);
+            this.groupBox1.Controls.Add(this.txtUrunAdi);
+            this.groupBox1.Controls.Add(this.txtStok);
+            this.groupBox1.Controls.Add(this.txtUrunFiyati);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 301);
+            this.groupBox1.Location = new System.Drawing.Point(-1, 303);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(551, 149);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.Size = new System.Drawing.Size(773, 149);
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Kategori Bilgileri";
+            this.groupBox1.Text = "Ürün Bilgileri";
             // 
             // btnSil
             // 
@@ -82,7 +89,6 @@
             this.btnSil.TabIndex = 8;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -93,7 +99,6 @@
             this.btnGuncelle.TabIndex = 7;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
-            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnEkle
             // 
@@ -103,11 +108,10 @@
             this.btnEkle.TabIndex = 7;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
-            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // txtAciklama
             // 
-            this.txtAciklama.Location = new System.Drawing.Point(342, 21);
+            this.txtAciklama.Location = new System.Drawing.Point(553, 28);
             this.txtAciklama.Name = "txtAciklama";
             this.txtAciklama.Size = new System.Drawing.Size(203, 116);
             this.txtAciklama.TabIndex = 6;
@@ -116,7 +120,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(268, 31);
+            this.label3.Location = new System.Drawing.Point(484, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 16);
             this.label3.TabIndex = 5;
@@ -132,21 +136,21 @@
             this.cbDurum.Text = "Aktif";
             this.cbDurum.UseVisualStyleBackColor = true;
             // 
-            // txtKategoriAdi
+            // txtUrunFiyati
             // 
-            this.txtKategoriAdi.Location = new System.Drawing.Point(113, 25);
-            this.txtKategoriAdi.Name = "txtKategoriAdi";
-            this.txtKategoriAdi.Size = new System.Drawing.Size(100, 22);
-            this.txtKategoriAdi.TabIndex = 3;
+            this.txtUrunFiyati.Location = new System.Drawing.Point(341, 28);
+            this.txtUrunFiyati.Name = "txtUrunFiyati";
+            this.txtUrunFiyati.Size = new System.Drawing.Size(100, 22);
+            this.txtUrunFiyati.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 31);
+            this.label2.Location = new System.Drawing.Point(255, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 16);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Kategori Adı";
+            this.label2.Text = "Ürün Fiyatı";
             // 
             // label1
             // 
@@ -157,18 +161,50 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Durum";
             // 
-            // KategoriYonetimi
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Ürün Adı";
+            // 
+            // txtUrunAdi
+            // 
+            this.txtUrunAdi.Location = new System.Drawing.Point(113, 25);
+            this.txtUrunAdi.Name = "txtUrunAdi";
+            this.txtUrunAdi.Size = new System.Drawing.Size(100, 22);
+            this.txtUrunAdi.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(255, 64);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 16);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Stok";
+            // 
+            // txtStok
+            // 
+            this.txtStok.Location = new System.Drawing.Point(341, 61);
+            this.txtStok.Name = "txtStok";
+            this.txtStok.Size = new System.Drawing.Size(100, 22);
+            this.txtStok.TabIndex = 3;
+            // 
+            // UrunYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 450);
+            this.ClientSize = new System.Drawing.Size(869, 468);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dgvKategoriler);
-            this.Name = "KategoriYonetimi";
+            this.Controls.Add(this.dgvUrunler);
+            this.Name = "UrunYonetimi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kategori Yönetimi";
-            this.Load += new System.EventHandler(this.KategoriYonetimi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKategoriler)).EndInit();
+            this.Text = "Ürün Yönetimi";
+            this.Load += new System.EventHandler(this.UrunYonetimi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -177,16 +213,20 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvKategoriler;
+        private System.Windows.Forms.DataGridView dgvUrunler;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox txtAciklama;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox cbDurum;
-        private System.Windows.Forms.TextBox txtKategoriAdi;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.RichTextBox txtAciklama;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox cbDurum;
+        private System.Windows.Forms.TextBox txtUrunFiyati;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtUrunAdi;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtStok;
+        private System.Windows.Forms.Label label5;
     }
 }
