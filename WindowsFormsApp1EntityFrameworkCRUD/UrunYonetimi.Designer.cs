@@ -78,6 +78,7 @@
             this.btnSil.TabIndex = 8;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -88,6 +89,7 @@
             this.btnGuncelle.TabIndex = 7;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnEkle
             // 
@@ -97,6 +99,7 @@
             this.btnEkle.TabIndex = 7;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // txtAciklama
             // 
@@ -192,6 +195,7 @@
             this.dgvUrunler.RowTemplate.Height = 24;
             this.dgvUrunler.Size = new System.Drawing.Size(870, 283);
             this.dgvUrunler.TabIndex = 3;
+            this.dgvUrunler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUrunler_CellClick);
             // 
             // UrunYonetimi
             // 

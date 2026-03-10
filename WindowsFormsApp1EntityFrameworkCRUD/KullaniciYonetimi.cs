@@ -102,7 +102,21 @@ namespace WindowsFormsApp1EntityFrameworkCRUD
 
         private void btnSil_Click(object sender, EventArgs e)
         {
+            var id = (int)dgvKullanicilar.CurrentRow.Cells[0].Value;
+            var kayit = context.Users.Find(id);
+            context.Users.Remove(kayit);
 
+            var sonuc = context.SaveChanges();
+
+            if (sonuc > 0)
+            {
+                Yukle();
+                MessageBox.Show("Kayıt Silme Başarılı!");
+            }
+            else
+            {
+                MessageBox.Show("Kayıt Silme Başarısız!");
+            }
         }
     }
 }
