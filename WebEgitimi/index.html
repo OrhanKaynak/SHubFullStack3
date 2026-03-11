@@ -218,6 +218,92 @@
         Yorum satırını açmak için ctrl tusuna basılı tutarken k + u tuşları yorum satırını açar.
     </p>
     <!--Burasu yorum alanı kod bitişi-->
-    <h3>Fieldset Elementi</h3>    
+    <h3>Fieldset Elementi</h3>
+    <fieldset>
+        <legend>
+            Kullanıcı Girişi
+        </legend>
+        <form>
+            <table>
+                <tr>
+                    <td>Kullanıcı Adı</td>
+                    <td>
+                        <input type="text" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Parola</td>
+                    <td>
+                        <input type="password" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Giriş Yap" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <hr />
+
+    <form action="index.html" method="get">
+        <table>
+            <tr>
+                <td>Ürün Adı</td>
+                <td>
+                    <input type="text" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>Ürün Fiyatı</td>
+                <td>
+                    <input type="text" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>Ürün Açıklaması</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Ürün Resmi</td>
+                <td>
+                    <input type="file" name="urunresmi" />
+                </td>
+            </tr>
+            <tr>
+                <td>Ürün Stok</td>
+                <td><input type="number" name="stok" /></td>
+            </tr>
+            <tr>
+                <td>Ürün Durum</td>
+                <td>
+                    <input type="checkbox" name="cbDurum" />
+                </td>
+            </tr>
+            <tr>
+                <td>Ürün Rengi</td>
+                <td>
+                    <input type="color" name="cbDurum" />
+                </td>
+            </tr>
+            <tr>
+                <td>Ürün Üretim Tarihi</td>
+                <td>
+                    <input type="date" name="dtTarih" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Kaydet" />
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
