@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Resimler\1761518123792.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
