@@ -85,6 +85,8 @@
     <Content Include="JavaScriptEgitimi\Konu04Donguler.html" />
     <Content Include="JavaScriptEgitimi\Konu05Fonksiyonlar.html" />
     <Content Include="JavaScriptEgitimi\Konu06StringMetotlari.html" />
+    <Content Include="JavaScriptEgitimi\Konu07Olaylar.html" />
+    <Content Include="JavaScriptEgitimi\Konu08Diziler.html" />
     <Content Include="Resimler\1761518123792.png" />
     <Content Include="stil.css" />
     <Content Include="Web.config" />
