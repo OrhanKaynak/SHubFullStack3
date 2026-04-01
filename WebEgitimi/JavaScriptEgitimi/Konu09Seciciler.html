@@ -67,9 +67,11 @@
         Css de kullandığımız element seçme yöntemlerini kullanarak sayfadan element seçmemizi sağlar.
     </p>
 
-    <p id="ilkElemanİcerigi" style="border: 1px solid">
+    <p id="ilkElemanicerigi" style="border: 1px solid">
 
     </p>
+
+    <h1 id="ilkBaslikicerigi" style="border: 1px solid"></h1>
 
     <script>
         var ilkEleman = document.querySelector("p") // querySelector metodu css sorgularıyla eleman seçmemizi sağlar
@@ -80,6 +82,11 @@
         console.log(pler);
         console.info("testinfo")
         console.warn("test warn")
+
+        var ilkBaslik = document.querySelector("h1")
+        console.log(ilkBaslik);
+
+        document.querySelector("#ilkBaslikicerigi").innerText = ilkBaslik.innerText
     </script>
 </body>
 </html>
