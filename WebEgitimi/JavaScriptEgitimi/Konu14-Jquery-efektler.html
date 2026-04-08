@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Konu14 Jquery Efektler</title>
+    <script src="../Scripts/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Konu14 Jquery Efektler</h1>
+
+    <input type="button" id="button1" name="name" value="Fade out" />
+    <input type="button" id="button2" name="name" value="Fade in" />
+    <input type="button" id="button3" name="name" value="Fade to" />
+    <button id="button4">Fade Toggle</button>
+
+    <div id="box" style="background-color: green; height: 100px; width: 100px; margin:1rem; padding:1rem; color: beige;">
+        <h2>Jquery de efekt kullanımı</h2>
+    </div>
+
+    <script>
+        $("#button1").on("click", function () {
+            $("h1").fadeOut()
+            $("#box").fadeOut()
+        });
+        $("#button2").on("click", function () {
+            $("h1").fadeIn()
+            $("#box").fadeIn()
+        });
+        $("#button3").on("click", function () {
+            $("h1").fadeTo(1000, 0.7)
+            $("#box").fadeTo(1100, 0.5)
+        });
+        $("#button4").on("click", function () {
+            $("h1").fadeToggle()
+            $("#box").fadeToggle()
+        });
+    </script>
+
+    <hr />
+
+    <input type="button" id="button5" name="name" value="Yükseklik animasyonu" />
+    <input type="button" id="button6" name="name" value="Animasyonu sıfırla" />
+
+    <script>
+        $("#button5").on("click", function () {
+            $("#box").animate({"height": "180px"})
+        });
+        $("#button6").on("click", function () {
+            $("#box").animate({"height": "100px"})
+        });
+    </script>
+
+    <h2>Yukarı Çık Uygulaması</h2>
+    <div style="height: 118vh">
+        Yukarı Çık yazısına tıklayarak sayfayı yukarı kaydırma
+    </div>
+    <a href="#" class="bactotop">Yukarı Çık</a>
+    <style>
+        .bactotop { position: fixed; bottom: 18px; right: 34px }
+    </style>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop()>100) {
+                    $(".backtotop").fadeIn()
+                }
+                else {
+                    $(".backtotop").fadeOut()
+                }
+            });
+
+            $(".backtotop").on("click", function () {
+                $("html,body").animate({ scrollTop: 0 })
+            });
+        });
+    </script>
+</body>
+</html>
