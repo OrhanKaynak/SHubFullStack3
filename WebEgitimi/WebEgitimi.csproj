@@ -72,6 +72,11 @@
     <Content Include="BootstrapEgitimi\Ders03Hizalama.html" />
     <Content Include="BootstrapEgitimi\Ders04SiralamaveIttirme.html" />
     <Content Include="BootstrapEgitimi\Ders05MarginPadding.html" />
+    <Content Include="BootstrapEgitimi\Ders06Olculendirme.html" />
+    <Content Include="BootstrapEgitimi\Ders07FormElementleri.html" />
+    <Content Include="BootstrapEgitimi\Ders08Alerts.html" />
+    <Content Include="BootstrapEgitimi\Ders09RenkClasslari.html" />
+    <Content Include="BootstrapEgitimi\Ders10Listeler.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -118,6 +123,7 @@
     <Content Include="JavaScriptEgitimi\Konu15-Jquery-Ajax.html" />
     <Content Include="JavaScriptEgitimi\Konu16-Javascript-Dunyasi.html" />
     <Content Include="Resimler\1761518123792.png" />
+    <Content Include="Resimler\portfolio2.jpeg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
