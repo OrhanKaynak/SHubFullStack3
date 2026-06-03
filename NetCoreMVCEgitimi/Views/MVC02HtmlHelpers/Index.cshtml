@@ -102,3 +102,55 @@ Html Hidden(Gizli Element) deki veriler sadece sayfa kaynağında görünür
 @Html.ListBox("lbListe", liste)
 <br />
 @Html.DropDownList("ddListe", liste)
+
+<hr />
+
+<h3>RadioButton Elementi Kullanımı</h3>
+
+<h5>Sözleşmeyi</h5>
+
+<label>
+    @Html.RadioButton("rbOnay", "Onay") Onaylıyorum
+</label>
+
+<label>
+    @Html.RadioButton("rbOnay", "Red") Onaylamıyorum
+</label>
+
+<hr />
+
+<h3>Html Raw ile Ekrana Html İçerik Yazdırma</h3>
+
+@{
+    string htmlRawOrnek = "<h3> Html Raw ile Ekrana Html İçerik Yazdırma </h3>";
+}
+
+@htmlRawOrnek
+
+@Html.Raw(htmlRawOrnek)
+
+@Html.Raw("<b style='color:red'>Html Raw ile Ekrana Html İçerik Yazdırma </b>")
+
+<hr />
+
+
+<h2>Tag Helpers</h2>
+
+<h3>
+    a Elementi
+</h3>
+
+<a asp-action="Index" asp-controller="Home" asp-route="18">Anasayfa</a>
+
+<h3>
+    Form Oluşturma
+</h3>
+
+<form asp-action="Index" asp-controller="MVC02HtmlandTagHelpers" method="post">
+    <h4>Kullanıcı Adı</h4>
+    <input id="txtKullaniciAdi" type="text" name="txtKullaniciAdi" value="" />
+    <h4>Şifre</h4>
+    <input id="txtSifre" name="txtSifre" type="text" value="" />
+    <br />
+    <input type="submit" value="Giriş" />
+</form>
