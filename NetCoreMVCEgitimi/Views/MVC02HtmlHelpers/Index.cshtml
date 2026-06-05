@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "MVC02 Html Helpers";
 
 }
@@ -129,7 +130,7 @@ Html Hidden(Gizli Element) deki veriler sadece sayfa kaynağında görünür
 
 @Html.Raw(htmlRawOrnek)
 
-@Html.Raw("<b style='color:red'>Html Raw ile Ekrana Html İçerik Yazdırma </b>")
+@Html.Raw("<b style='color:red'>Html Raw ile Ekrana Html İçerik Yazdırma </b>" )
 
 <hr />
 
@@ -140,13 +141,13 @@ Html Hidden(Gizli Element) deki veriler sadece sayfa kaynağında görünür
     a Elementi
 </h3>
 
-<a asp-action="Index" asp-controller="Home" asp-route="18">Anasayfa</a>
+<a asp-action="Index" asp-controller="Home" asp-route-id="18">Anasayfa</a>
 
 <h3>
     Form Oluşturma
 </h3>
 
-<form asp-action="Index" asp-controller="MVC02HtmlandTagHelpers" method="post">
+<form asp-action="Index" asp-controller="MVC02HtmlHelpers" method="post">
     <h4>Kullanıcı Adı</h4>
     <input id="txtKullaniciAdi" type="text" name="txtKullaniciAdi" value="" />
     <h4>Şifre</h4>
