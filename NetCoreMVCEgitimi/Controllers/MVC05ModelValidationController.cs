@@ -16,9 +16,13 @@ namespace NetCoreMVCEgitimi.Controllers
         [HttpPost]
         public IActionResult YeniUye(Uye uye)
         {
-            if (true)
+            if (ModelState.IsValid) // Eğer modeldeki kurallara uyulmuşsa
             {
-
+                // kayıt ekle
+            }
+            else
+            {
+                ModelState.AddModelError("", "Zorunlu alanları doldurunuz!"); // modeldeki kurallara uyulmazsa hata mesajı ekle
             }
             return View(uye);
         }
