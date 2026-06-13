@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Mvc Section Kullanımı";
+}
+
+<h2>Mvc Section Kullanımı</h2>
+
+<section>
+    Sayfa içerisinde html section elementi ile bir bölüm. <br />
+    MVC section alt sayfalardan layout içerisine html, cssi javascript kodları göndermemizi sağlar.
+</section>
+
+@section Scripts{
+    <script>
+       // alert("MVC Section Kullanımı")
+        console.log("Bu yazı section ile gönderildi!")
+    </script>
+}
+
+@section OzelIcerik{
+    <section class="alert alert-success text-center">
+        Kampanyalı ürünlerimizi gördünüz mü?
+    </section>
+}
+
+@section OzelCss{
+    <style>
+        body { background-color: red; color: white; }
+    </style>
+}
