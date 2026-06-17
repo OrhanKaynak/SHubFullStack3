@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "appsetting Dosyasından Değer Okuma";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+
+<p>
+    Mvc ile appsetting dosyasına yazacağımız özel verilere erişip uygulama içerisinde kullanbiliriz.
+</p>
+
+<p class="alert alert-warning">
+    @Html.Raw(ViewBag.Mesaj)
+</p>
