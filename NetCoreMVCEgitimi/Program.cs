@@ -21,6 +21,8 @@ namespace NetCoreMVCEgitimi
                     options.AccessDeniedPath = "/MVC15FiltersUsing/AccessDenied"; // kullanıcı yetkisiz bir sayfaya erişmeye çalışırsa yönlendirilecek sayfa
                 });
 
+            builder.Services.AddHttpClient(); // api ye istek işlemleri için
+
             var app = builder.Build(); // çalışacak olan uygulama örneği
 
             // Configure the HTTP request pipeline.
