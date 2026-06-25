@@ -1,6 +1,8 @@
-# 🚀 Skilled Hub 3 — Full Stack .NET Eğitim Yolculuğu
+<p align="right"><strong>🇬🇧 English</strong> | <a href="README.tr.md">🇹🇷 Türkçe</a></p>
 
-> C# temellerinden modern ASP.NET Core Web API'ye kadar uzanan, baştan sona uygulamalı bir **Full Stack .NET geliştirici** eğitiminin tüm proje ve örneklerini içeren depo.
+# 🚀 Skilled Hub 3 — Full Stack .NET Learning Journey
+
+> A complete, hands-on **Full Stack .NET developer** training repository — every project and example, from C# fundamentals all the way to modern ASP.NET Core Web API.
 
 <p align="center">
   <img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 10" />
@@ -13,146 +15,148 @@
 
 ---
 
-## 📖 Hakkında
+## 📖 About
 
-Bu depo, **Skilled Hub 3** Full Stack .NET eğitimi boyunca işlenen tüm konuların kod örneklerini ve mini projelerini bir araya getirir. İçerik, bir geliştiricinin sıfırdan başlayıp adım adım ilerleyebileceği şekilde **temelden ileri seviyeye** doğru sıralanmıştır:
+This repository brings together all the code examples and mini-projects covered throughout the **Skilled Hub 3** Full Stack .NET training. The content is ordered **from fundamentals to advanced**, so a developer can start from zero and progress step by step:
 
 ```
-C# Temelleri  →  Nesne Yönelimli Programlama  →  Web Temelleri  →
-Masaüstü (WinForms + Veritabanı)  →  ASP.NET MVC  →  ASP.NET Core MVC  →  Web API
+C# Fundamentals  →  Object-Oriented Programming  →  Web Fundamentals  →
+Desktop (WinForms + Database)  →  ASP.NET MVC  →  ASP.NET Core MVC  →  Web API
 ```
 
-Her klasör, bağımsız çalıştırılabilen bir Visual Studio projesidir ve ilgili konuyu izole örneklerle anlatır.
+Each folder is a self-contained Visual Studio project that demonstrates its topic with isolated examples.
 
 ---
 
-## 🗂️ İçindekiler
+## 🗂️ Table of Contents
 
-| # | Bölüm | Açıklama |
-|---|-------|----------|
-| 1 | [C# Temelleri & OOP](#-1-c-temelleri--nesne-yönelimli-programlama) | Değişkenlerden SOLID prensiplerine 18 konu |
-| 2 | [Web Temelleri](#-2-web-temelleri) | CSS, JavaScript, jQuery, Bootstrap |
-| 3 | [Masaüstü & Veritabanı](#-3-masaüstü-uygulamaları--veritabanı) | Windows Forms, ADO.NET, Entity Framework CRUD |
+| # | Section | Description |
+|---|---------|-------------|
+| 1 | [C# Fundamentals & OOP](#-1-c-fundamentals--object-oriented-programming) | 18 topics from variables to SOLID principles |
+| 2 | [Web Fundamentals](#-2-web-fundamentals) | CSS, JavaScript, jQuery, Bootstrap |
+| 3 | [Desktop & Database](#-3-desktop-applications--database) | Windows Forms, ADO.NET, Entity Framework CRUD |
 | 4 | [ASP.NET MVC](#-4-aspnet-mvc) | .NET Framework & .NET Core MVC |
-| 5 | [Web API](#-5-aspnet-core-web-api) | RESTful servisler |
+| 5 | [Web API](#-5-aspnet-core-web-api) | RESTful services |
 
 ---
 
-## 🧩 1. C# Temelleri & Nesne Yönelimli Programlama
+## 🧩 1. C# Fundamentals & Object-Oriented Programming
 
-Konsol uygulamaları üzerinden, dilin temellerinden başlayıp OOP ve yazılım prensiplerine kadar ilerleyen **18 konu**:
+**18 topics** built as console applications, progressing from the basics of the language to OOP and software design principles:
 
-| Konu | İçerik |
-|------|--------|
-| `Konu01Degiskenler` | Değişkenler ve veri tipleri |
-| `Konu02TipDonusumleri` | Tip dönüşümleri (casting / parsing) |
-| `Konu03Operatorler` | Operatörler |
-| `Konu04KararYapilari` | Karar yapıları (if / switch) |
-| `Konu05Metotlar` | Metotlar ve parametreler |
-| `Konu06Diziler` | Diziler |
-| `Konu07Donguler` | Döngüler |
-| `Konu08SiniflarClasses` | Sınıflar |
-| `Konu09StructYapilar` | Struct yapıları |
-| `Konu10StringSinifi` | String sınıfı ve metotları |
-| `Konu11Enumlar` | Enum'lar |
-| `Konu12KalitimInheritance` | Kalıtım (Inheritance) |
-| `Konu13KapsullemeEncapsulation` | Kapsülleme (Encapsulation) |
-| `Konu14InterfacesArayuzler` | Arayüzler (Interfaces) |
-| `Konu15AbstractClasses` | Soyut sınıflar (Abstract Classes) |
-| `Konu16CollectionsKoleksiyonlar` | Koleksiyonlar |
-| `Konu17HataYonetimi` | Hata yönetimi (Exception Handling) |
-| `Konu18SOLIDPrensipleri` | SOLID prensipleri |
+| Topic | Content |
+|-------|---------|
+| `Konu01Degiskenler` | Variables and data types |
+| `Konu02TipDonusumleri` | Type conversions (casting / parsing) |
+| `Konu03Operatorler` | Operators |
+| `Konu04KararYapilari` | Decision structures (if / switch) |
+| `Konu05Metotlar` | Methods and parameters |
+| `Konu06Diziler` | Arrays |
+| `Konu07Donguler` | Loops |
+| `Konu08SiniflarClasses` | Classes |
+| `Konu09StructYapilar` | Structs |
+| `Konu10StringSinifi` | String class and its methods |
+| `Konu11Enumlar` | Enums |
+| `Konu12KalitimInheritance` | Inheritance |
+| `Konu13KapsullemeEncapsulation` | Encapsulation |
+| `Konu14InterfacesArayuzler` | Interfaces |
+| `Konu15AbstractClasses` | Abstract Classes |
+| `Konu16CollectionsKoleksiyonlar` | Collections |
+| `Konu17HataYonetimi` | Exception Handling |
+| `Konu18SOLIDPrensipleri` | SOLID principles |
 
----
-
-## 🎨 2. Web Temelleri
-
-`WebEgitimi/` klasörü altında, **40+ HTML örneği** ile ön yüz geliştirmenin temelleri:
-
-- **CSS Eğitimi** — Arka planlar, margin/padding, boyutlandırma, `display`, `position`, `float` ve daha fazlası
-- **JavaScript Eğitimi** — Operatörler, karar yapıları, döngüler, fonksiyonlar, string metotları, olaylar, diziler, seçiciler, DOM
-- **jQuery** — Seçiciler, HTML/CSS manipülasyonu, DOM işlemleri, efektler, AJAX
-- **Bootstrap Eğitimi** — Grid sistemi, hizalama, form elemanları, komponentler, tablo class'ları ve örnek tasarım
+> Folder names are kept in Turkish (`Konu` = "Topic") as part of the original learning material.
 
 ---
 
-## 💻 3. Masaüstü Uygulamaları & Veritabanı
+## 🎨 2. Web Fundamentals
 
-Windows Forms ile masaüstü uygulama geliştirme ve veritabanı işlemleri:
+Under the `WebEgitimi/` folder, **40+ HTML examples** covering the basics of front-end development:
 
-| Proje | Açıklama |
-|-------|----------|
-| `WindowsFormsEgitimi` | Windows Forms temel kontrolleri ve olayları |
-| `WindowsFormsAppAdoNetCRUD` | **ADO.NET** ile doğrudan SQL üzerinden CRUD işlemleri |
-| `WindowsFormsApp1EntityFrameworkCRUD` | **Entity Framework** ile ORM tabanlı CRUD işlemleri |
+- **CSS** — Backgrounds, margin/padding, sizing, `display`, `position`, `float`, and more
+- **JavaScript** — Operators, decision structures, loops, functions, string methods, events, arrays, selectors, DOM
+- **jQuery** — Selectors, HTML/CSS manipulation, DOM operations, effects, AJAX
+- **Bootstrap** — Grid system, alignment, form elements, components, table classes, and a sample design
+
+---
+
+## 💻 3. Desktop Applications & Database
+
+Building desktop applications with Windows Forms and performing database operations:
+
+| Project | Description |
+|---------|-------------|
+| `WindowsFormsEgitimi` | Windows Forms basic controls and events |
+| `WindowsFormsAppAdoNetCRUD` | CRUD operations directly over SQL using **ADO.NET** |
+| `WindowsFormsApp1EntityFrameworkCRUD` | ORM-based CRUD operations using **Entity Framework** |
 
 ---
 
 ## 🌐 4. ASP.NET MVC
 
-İki nesil MVC framework'ünün karşılaştırmalı eğitimi:
+A comparative look at two generations of the MVC framework:
 
-### `NetFrameworkMVCEgitimi` — Klasik ASP.NET MVC (.NET Framework 4.x)
-Controller / View / Model yapısı, Razor view'lar ve klasik MVC mimarisi.
+### `NetFrameworkMVCEgitimi` — Classic ASP.NET MVC (.NET Framework 4.x)
+Controller / View / Model structure, Razor views, and the classic MVC architecture.
 
 ### `NetCoreMVCEgitimi` — Modern ASP.NET Core MVC (.NET 10)
-Kapsamlı, **19 controller**'lık ileri seviye MVC eğitimi:
+A comprehensive, advanced MVC course spanning **19 controllers**:
 
 - Razor Syntax, HTML Helpers, Data Transfer (ViewBag/ViewData/TempData)
 - Model Binding & Model Validation
-- **CRUD** işlemleri, Section & Partial View'lar, View Result tipleri
-- File Upload, Cookie & Session yönetimi, String formatlama
-- `appsettings.json` kullanımı, **Filters**, HttpContext
+- **CRUD** operations, Section & Partial Views, View Result types
+- File Upload, Cookie & Session management, string formatting
+- `appsettings.json` usage, **Filters**, HttpContext
 - **Areas** (Admin, Blog, ApiKullanımı), **View Components**
 
 ---
 
 ## 🔌 5. ASP.NET Core Web API
 
-`AspNetCoreWebAPI/` — .NET 10 üzerinde **RESTful Web API** geliştirme:
+`AspNetCoreWebAPI/` — Building a **RESTful Web API** on .NET 10:
 
-- Controller tabanlı API yapısı (`UyelerController`, `WeatherForecastController`)
-- HTTP metotları (GET / POST / PUT / DELETE)
-- Swagger / OpenAPI desteği
+- Controller-based API structure (`UyelerController`, `WeatherForecastController`)
+- HTTP methods (GET / POST / PUT / DELETE)
+- Swagger / OpenAPI support
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Tech Stack
 
-| Katman | Teknolojiler |
-|--------|--------------|
-| **Dil** | C# |
+| Layer | Technologies |
+|-------|--------------|
+| **Language** | C# |
 | **Platform** | .NET 10, .NET Framework 4.7.2 / 4.8 |
 | **Web** | ASP.NET Core MVC, ASP.NET MVC, ASP.NET Core Web API |
-| **Veri** | Entity Framework, ADO.NET |
-| **Masaüstü** | Windows Forms |
-| **Ön Yüz** | HTML5, CSS3, JavaScript, jQuery, Bootstrap |
-| **Araçlar** | Visual Studio, Git |
+| **Data** | Entity Framework, ADO.NET |
+| **Desktop** | Windows Forms |
+| **Front-end** | HTML5, CSS3, JavaScript, jQuery, Bootstrap |
+| **Tools** | Visual Studio, Git |
 
 ---
 
-## ⚙️ Kurulum & Çalıştırma
+## ⚙️ Getting Started
 
 ```bash
-# Depoyu klonlayın
+# Clone the repository
 git clone https://github.com/OrhanKaynak/SHubFullStack3.git
 cd SHubFullStack3
 ```
 
-1. `SHubFullStack3.slnx` çözüm dosyasını **Visual Studio** ile açın.
-2. Çalıştırmak istediğiniz projeyi **Solution Explorer**'da sağ tıklayıp **Set as Startup Project** deyin.
-3. `F5` ile derleyip çalıştırın.
+1. Open the `SHubFullStack3.slnx` solution file with **Visual Studio**.
+2. Right-click the project you want to run in **Solution Explorer** and select **Set as Startup Project**.
+3. Build and run with `F5`.
 
-> **Gereksinimler:** [.NET 10 SDK](https://dotnet.microsoft.com/download) ve güncel bir Visual Studio sürümü. Windows Forms ve .NET Framework projeleri için Windows ortamı gereklidir.
+> **Requirements:** [.NET 10 SDK](https://dotnet.microsoft.com/download) and a recent version of Visual Studio. The Windows Forms and .NET Framework projects require a Windows environment.
 
 ---
 
-## 📈 Eğitim Yol Haritası
+## 📈 Learning Roadmap
 
 ```mermaid
 graph LR
-    A[C# Temelleri] --> B[OOP & SOLID]
-    B --> C[Web Temelleri<br/>CSS · JS · Bootstrap]
+    A[C# Fundamentals] --> B[OOP & SOLID]
+    B --> C[Web Fundamentals<br/>CSS · JS · Bootstrap]
     C --> D[Windows Forms<br/>ADO.NET · EF]
     D --> E[ASP.NET MVC]
     E --> F[ASP.NET Core MVC]
@@ -161,7 +165,7 @@ graph LR
 
 ---
 
-## 👤 Geliştirici
+## 👤 Author
 
 **Orhan Kaynak**
 🔗 [github.com/OrhanKaynak](https://github.com/OrhanKaynak)
@@ -169,5 +173,5 @@ graph LR
 ---
 
 <p align="center">
-  <sub>Skilled Hub 3 — Full Stack .NET Eğitimi kapsamında hazırlanmıştır. ⭐ Beğendiyseniz yıldız vermeyi unutmayın!</sub>
+  <sub>Built as part of the Skilled Hub 3 — Full Stack .NET training. ⭐ If you like it, consider giving it a star!</sub>
 </p>
